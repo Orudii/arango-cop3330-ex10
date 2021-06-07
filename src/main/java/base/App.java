@@ -28,7 +28,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         int quan1, quan2, quan3;
-        float price1, price2, price3, subTotal;
+        float price1, price2, price3, subTotal, Tax;
         Scanner in=new Scanner(System.in);
 
         System.out.print("Enter the price of item 1: ");
@@ -54,7 +54,9 @@ public class App {
 
 
 
-        System.out.println("total " +subTotal);
+
+
+        System.out.println("Subtotal: " +subTotal+ "\nTax: " +(subTotal * 1.055));
     }
 
 
